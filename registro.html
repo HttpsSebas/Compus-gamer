@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro e Inicio de Sesión</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="tabs">
+    <button class="tab-btn active" onclick="openTab(event, 'registro')">Registro</button>
+    <button class="tab-btn" onclick="openTab(event, 'inicio-sesion')">Iniciar Sesión</button>
+  </div>
+
+  <div id="registro" class="tab-content">
+    <h2>Registro</h2>
+    <form>
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" required>
+      <label for="email">Email:</label>
+      <input type="email" id="email" required>
+      <label for="contrasena">Contraseña:</label>
+      <input type="password" id="contrasena" required>
+      <button type="submit">Registrarse</button>
+    </form>
+  </div>
+
+  <div id="inicio-sesion" class="tab-content" style="display: none;">
+    <h2>Iniciar Sesión</h2>
+    <form>
+      <label for="email-login">Email:</label>
+      <input type="email" id="email-login" required>
+      <label for="contrasena-login">Contraseña:</label>
+      <input type="password" id="contrasena-login" required>
+      <button type="submit">Iniciar Sesión</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,197 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.logo img {
+  height: 60px;
+}
+
+@media screen and (max-width: 768px) {
+  
+}
+
+.products {
+  display: flex;
+  justify-content: space-around;
+  background-color: #f9f9f9;
+  padding: 20px;
+}
+
+/* Estilos de los bloques de productos */
+.bloque {
+  width: 300px;
+  text-align: center;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.bloque img {
+  margin-bottom: 10px;
+}
+
+.bloque h4 {
+  color: #333;
+  font-size: 20px;
+}
+
+.bloque p {
+  color: #666;
+}
+
+
+.compus {
+  text-align: center;
+}
+
+h2 {
+  font-family: "Open Sans", "Trebuchet MS", sans-serif;
+  font-weight: 700;
+  letter-spacing: -1;
+}
+
+ul li{
+  list-style: none;
+}
+
+.padre {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #aa8d8d;
+  padding: 5px;
+}
+
+.left,
+.right {
+  text-align: center;
+  width: 90%;
+  margin: 0;
+}
+
+.left img,
+.right img {
+  display: block;
+  margin: 0 auto;
+  width: 90px;
+}
+
+hr {
+  width: 2px;
+  height: 50px;
+  margin: 0;
+  border: none;
+  background-color: blue;
+}
+
+.h2 {
+  background-color: #cac3c3;
+  margin-top: 3em;
+  text-align: center;
+}
+
+.sidebar {
+  background-color: #333;
+  color: #fff;
+  width: 250px;
+  height: 100%;
+  position: fixed;
+}
+
+.logo img {
+  display: block;
+  margin: 20px auto;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  padding: 10px 20px;
+  border-bottom: 1px solid #555;
+}
+
+/* Cambiar color del texto a blanco */
+li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+li a:hover {
+  text-decoration: none;
+  color: #dba5a5;
+}
+
+/* Estilos para los menús desplegables */
+.submenu {
+  display: none;
+}
+
+/* Estilos para el menú desplegable abierto */
+.submenu.active {
+  display: block;
+}
+
+/* Apartados*/
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+
+.hero {
+  text-align: center;
+  padding: 20px;
+  background-color: rgb(226, 64, 43);
+}
+
+.hero h1 {
+  font-size: 36px;
+  color: #1d1919;
+}
+
+.hero p {
+  font-size: 18px;
+  color: #b6a2a2;
+}
+
+/* Estilos de los bloques de productos */
+.product {
+  padding: 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+.product-info {
+  text-align: center;
+}
+
+.product h2 {
+  background-color: #000;
+  color: #fff;
+  padding: 5px;
+}
+
+.product img {
+  margin-top: 30px;
+  height: 310px;
+}
+
+.product .product-price {
+  font-size: 30px;
+  color: #000;
+  text-align: center;
+}
