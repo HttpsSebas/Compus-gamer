@@ -6,6 +6,7 @@
     <title>Notebooks</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
   <div class="sidebar">
@@ -15,21 +16,24 @@
       </div>
     </header>
     <ul>
-      <li><a href="index.html">Inicio</a></li>
-      <li class="has-submenu"><a href="#">Productos</a>
+      <li><a href="index.html"><i class="fas fa-home red"></i> Inicio</a></li>
+      <li class="has-submenu">
+        <a href="#"><i class="fas fa-desktop red"></i> Productos</a>
         <ul class="submenu">
-          <li><a href="notebooks.html">Notebooks</a></li>
-          <li><a href="pcs.html">PC de Escritorio</a></li>
-          <li class="has-submenu"><a href="#">Componentes</a>
+          <li><a href="notebooks.html"><i class="fas fa-laptop red"></i> Notebooks</a></li>
+          <li><a href="pcs.html"><i class="fas fa-desktop red"></i> PC de Escritorio</a></li>
+          <li class="has-submenu">
+            <a href="#"><i class="fas fa-cogs red"></i> Componentes</a>
             <ul class="submenu">
-              <li><a href="ram.html">Memorias RAM</a></li>
-              <li><a href="procesadores.html">Procesadores</a></li>
-              <li><a href="video.html">Placas de video</a></li>
+              <li><a href="ram.html"><i class="fas fa-memory red"></i> Memorias RAM</a></li>
+              <li><a href="procesadores.html"><i class="fas fa-microchip red"></i> Procesadores</a></li>
+              <li><a href="video.html"><i class="fas fa-video red"></i> Placas de video</a></li>
             </ul>
           </li>
         </ul>
       </li>
-      <li><a href="">Contacto</a></li>
+      <li><a href="contact.html"><i class="fas fa-envelope red"></i> Contacto</a></li>
+      <li><a href="cart.html"><i class="fas fa-shopping-cart red"></i> Carrito</a></li>
     </ul>
   </div>
   <div class="content">
@@ -47,6 +51,7 @@
     </div>
     <p class="product-price">PRECIO</p>
        <p class="product-price">U$D1,999</p> 
+       <button class="add-to-cart-btn" data-product="16 Nova - RTX 4070" data-price="USD1,999">Añadir al Carrito</button>
        </section>
 
        <section class="product">
@@ -56,6 +61,7 @@
      </div>
      <p class="product-price">PRECIO</p>
         <p class="product-price">U$D2,864</p> 
+        <button class="add-to-cart-btn" data-product="Avon - RTX 4080/4090" data-price="USD2,864">Añadir al carrito</button>
         </section>
 
         <section class="product">
@@ -66,6 +72,7 @@
          <p class="product-price">PRECIO</p>
             <p class="product-price">$
                 549.999</p> 
+             <button class="add-to-cart-btn" data-product="Dell Ryzen 7 16gb Ram 512gb Ssd" data-price="USD549,999">Añadir al carrito</button>
             </section>
 
         <section class="product">
@@ -75,6 +82,7 @@
          </div>
             <p class="product-price">PRECIO</p>
             <p class="product-price">$489.999</p> 
+            <button class="add-to-cart-btn" data-product="Asus Tuf F15 Core I5 16gb 512gb Ssd Gtx 1650" data-price="489.999">Añadir al carrito</button>
         </section>
 
         <section class="product">
@@ -84,12 +92,31 @@
          </div>
          <p class="product-price">PRECIO</p>
             <p class="product-price">$298.290</p> 
+            <button class="add-to-cart-btn" data-product="Lenovo IdeaPad 3i Intel I5 1135g7 Ram 8gb Ssd 256gb Full hd Windows 11" data-price="298.290">Añadir al carrito</button>
             </section>
 
     </main>
 
   </div>
 
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-logo">
+        <img src="logo.png" alt="Logo de la tienda" width="90px">
+      </div>
+      <div class="footer-links">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="notebooks.html">Notebooks</a></li>
+          <li><a href="pcs.html">PC de Escritorio</a></li>
+          <li><a href="ram.html">Memorias RAM</a></li>
+          <li><a href="procesadores.html">Procesadores</a></li>
+          <li><a href="video.html">Placas de video</a></li>
+          <li><a href="cart.html">Carrito</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
 <script src="script.js"></script>
 </body>
 </html>

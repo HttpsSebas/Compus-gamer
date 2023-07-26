@@ -6,7 +6,7 @@
   <title>Tienda Gamer - Computadoras</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="css/bootstrap.css">
- 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
   <div class="sidebar">
@@ -16,21 +16,24 @@
       </div>
     </header>
     <ul>
-      <li><a href="index.html">Inicio</a></li>
-      <li class="has-submenu"><a href="#">Productos</a>
+      <li><a href="index.html"><i class="fas fa-home red"></i> Inicio</a></li>
+      <li class="has-submenu">
+        <a href="#"><i class="fas fa-desktop red"></i> Productos</a>
         <ul class="submenu">
-          <li><a href="notebooks.html">Notebooks</a></li>
-          <li><a href="pcs.html">PC de Escritorio</a></li>
-          <li class="has-submenu"><a href="#">Componentes</a>
+          <li><a href="notebooks.html"><i class="fas fa-laptop red"></i> Notebooks</a></li>
+          <li><a href="pcs.html"><i class="fas fa-desktop red"></i> PC de Escritorio</a></li>
+          <li class="has-submenu">
+            <a href="#"><i class="fas fa-cogs red"></i> Componentes</a>
             <ul class="submenu">
-              <li><a href="ram.html">Memorias RAM</a></li>
-              <li><a href="procesadores.html">Procesadores</a></li>
-              <li><a href="video.html">Placas de video</a></li>
+              <li><a href="ram.html"><i class="fas fa-memory red"></i> Memorias RAM</a></li>
+              <li><a href="procesadores.html"><i class="fas fa-microchip red"></i> Procesadores</a></li>
+              <li><a href="video.html"><i class="fas fa-video red"></i> Placas de video</a></li>
             </ul>
           </li>
         </ul>
       </li>
-      <li><a href="">Contacto</a></li>
+      <li><a href="contact.html"><i class="fas fa-envelope red"></i> Contacto</a></li>
+      <li><a href="cart.html"><i class="fas fa-shopping-cart red"></i> Carrito</a></li>
     </ul>
   </div>
   <div class="content">
@@ -82,14 +85,26 @@
       <h3>U$D1,560</h3>
     </div>
     </div>
-
   </main>
-
-  <!--<footer>
-    <p>&copy; 2023 Tienda Gamer. Todos los derechos reservados.</p>
-  </footer>-->
+ </div>
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-logo">
+        <img src="logo.png" alt="Logo de la tienda" width="90px">
+      </div>
+      <div class="footer-links">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="notebooks.html">Notebooks</a></li>
+          <li><a href="pcs.html">PC de Escritorio</a></li>
+          <li><a href="ram.html">Memorias RAM</a></li>
+          <li><a href="procesadores.html">Procesadores</a></li>
+          <li><a href="video.html">Placas de video</a></li>
+          <li><a href="cart.html">Carrito</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
   <script src="script.js"></script>
-
-</div>
 </body>
 </html>

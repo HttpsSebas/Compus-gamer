@@ -6,6 +6,7 @@
     <title>PC de Escritorio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
   <div class="sidebar">
@@ -15,21 +16,24 @@
       </div>
     </header>
     <ul>
-      <li><a href="index.html">Inicio</a></li>
-      <li class="has-submenu"><a href="#">Productos</a>
+      <li><a href="index.html"><i class="fas fa-home red"></i> Inicio</a></li>
+      <li class="has-submenu">
+        <a href="#"><i class="fas fa-desktop red"></i> Productos</a>
         <ul class="submenu">
-          <li><a href="notebooks.html">Notebooks</a></li>
-          <li><a href="pcs.html">PC de Escritorio</a></li>
-          <li class="has-submenu"><a href="#">Componentes</a>
+          <li><a href="notebooks.html"><i class="fas fa-laptop red"></i> Notebooks</a></li>
+          <li><a href="pcs.html"><i class="fas fa-desktop red"></i> PC de Escritorio</a></li>
+          <li class="has-submenu">
+            <a href="#"><i class="fas fa-cogs red"></i> Componentes</a>
             <ul class="submenu">
-              <li><a href="ram.html">Memorias RAM</a></li>
-              <li><a href="procesadores.html">Procesadores</a></li>
-              <li><a href="video.html">Placas de video</a></li>
+              <li><a href="ram.html"><i class="fas fa-memory red"></i> Memorias RAM</a></li>
+              <li><a href="procesadores.html"><i class="fas fa-microchip red"></i> Procesadores</a></li>
+              <li><a href="video.html"><i class="fas fa-video red"></i> Placas de video</a></li>
             </ul>
           </li>
         </ul>
       </li>
-      <li><a href="">Contacto</a></li>
+      <li><a href="contact.html"><i class="fas fa-envelope red"></i> Contacto</a></li>
+      <li><a href="cart.html"><i class="fas fa-shopping-cart red"></i> Carrito</a></li>
     </ul>
   </div>
   <div class="content">
@@ -45,6 +49,7 @@
           <img src="images/pc1.webp" alt="PC 1" height="310px">
           <p class="product-price">PRECIO</p>
           <p class="product-price">$119.999</p> 
+          <button class="add-to-cart-btn" data-product="Intel C I3 + 8 Gb Ssd 240 W10 Office" data-price="119.999">Añadir al Carrito</button>
         </div>
       </section>
 
@@ -54,6 +59,7 @@
           <img src="images/pc2.webp" alt="PC 2" height="310px">
           <p class="product-price">PRECIO</p>
           <p class="product-price">$141.500</p> 
+          <button class="add-to-cart-btn" data-product="Intel Core I5 8gb Ssd240 W10 Office" data-price="141.500">Añadir al carrito</button>
         </div>
       </section>
 
@@ -63,6 +69,7 @@
           <img src="images/pc3.webp" alt="PC 3" height="310px">
           <p class="product-price">PRECIO</p>
           <p class="product-price">$129.990</p> 
+          <button class="add-to-cart-btn" data-product="Cpu Core I3 8 Gb Ram 240gb Hdmi" data-price="129.990">Añadir al carrito</button>
         </div>
       </section>
 
@@ -72,12 +79,30 @@
           <img src="images/pc4.webp" alt="PC 4" height="310px">
           <p class="product-price">PRECIO</p>
           <p class="product-price">$97.990</p> 
+          <button class="add-to-cart-btn" data-product="Cpu Core I3 16 Gb Ram 1Tb" data-price="97.990">Añadir al carrito</button>
         </div>
       </section>
 
     </main>
   </div>
-
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-logo">
+        <img src="logo.png" alt="Logo de la tienda" width="90px">
+      </div>
+      <div class="footer-links">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="notebooks.html">Notebooks</a></li>
+          <li><a href="pcs.html">PC de Escritorio</a></li>
+          <li><a href="ram.html">Memorias RAM</a></li>
+          <li><a href="procesadores.html">Procesadores</a></li>
+          <li><a href="video.html">Placas de video</a></li>
+          <li><a href="cart.html">Carrito</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
 <script src="script.js"></script>
 </body>
 </html>
