@@ -16,9 +16,7 @@ header {
 }
 
 @media screen and (max-width: 768px) {
-  
 }
-
 .products {
   display: flex;
   justify-content: space-around;
@@ -100,14 +98,34 @@ hr {
   text-align: center;
 }
 
+.boton{
+  background-color: #796a6a;
+}
+
 .sidebar {
+  position: fixed;
+  left: -200px;
+  top: 0;
+  width: 200px;
+  height: 100%;
+  background-color: #333;
+  color: white;
+  padding-top: 20px;
+  transition: left 0.3s ease-in-out;
+}
+
+.sidebar.active {
+  left: 0;
+}
+
+/* .sidebar { 
   background-color: #333;
   color: #fff;
   width: 250px;
   height: 100%;
   position: fixed;
 }
-
+*/
 .logo img {
   display: block;
   margin: 20px auto;
@@ -232,49 +250,35 @@ li a:hover {
 .footer {
   background-color: #333;
   color: #fff;
-  padding: 20px 0;
-  margin-top: 7em;
-  margin-bottom: 0
+  padding: 20px;
+  text-align: center;
 }
 
 .footer-content {
-  max-width: 1200px;
-  margin: 0 auto;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .footer-logo img {
-  width: 90px;
+  display: block;
+  margin: 0 auto;
 }
 
-.footer-links ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+.footer-icons {
   display: flex;
+  align-items: center;
+  flex: 1;
+  justify-content: center;
 }
 
-.footer-links li {
-  margin-right: 20px;
+.footer-icons img {
+  margin-right: 10px;
 }
 
-.footer-links li:last-child {
-  margin-right: 0;
-}
+.container {
+  display: flex;
+  flex-direction: row;
 
-.footer-links a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-  transition: color 0.3s;
-}
-
-.footer-links a:hover {
-  color: #f2a900;
-}
-
-.footer-contact p {
-  margin: 0;
 }

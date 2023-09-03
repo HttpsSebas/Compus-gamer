@@ -80,3 +80,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
   updateCart(cartItems);
 });
+
+const toggleButton = document.getElementById('toggleButton');
+const sidebar = document.getElementById('sidebar');
+
+toggleButton.addEventListener('click', () => {
+  sidebar.classList.toggle('active');
+});
+
+hideButton.addEventListener('click', () => {
+  sidebar.classList.remove('active');
+});
