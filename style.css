@@ -74,6 +74,10 @@ ul li{
   flex: 250px;
 }
 
+.imagen{
+  
+}
+
 .left,
 .right {
   text-align: center;
@@ -103,7 +107,7 @@ hr {
 }
 
 .boton{
-  background-color: #796a6a;
+  background-color: #755555;
 }
 
 .sidebar {
@@ -218,6 +222,8 @@ li a:hover {
 .product img {
   margin-top: 30px;
   height: 310px;
+  width: 371px;
+  text-align: center;
 }
 
 .product .product-price {
@@ -284,5 +290,8 @@ li a:hover {
 .container {
   display: flex;
   flex-direction: row;
+}
 
+h2{
+  
 }
