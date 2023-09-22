@@ -1,105 +1,100 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tienda Gamer - Computadoras</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="css/bootstrap.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-</head>
-<body>
-  <button id="toggleButton" class="boton">≡ Abrir Menú</button>
-  <div class="sidebar" id="sidebar">
-    <button id="hideButton" class="boton">≡ Cerrar Menú</button>
-    <header>
-      <div class="logo">
-        <img src="logo.png" alt="Logo de la tienda" width="90px">
-      </div>
-    </header>
-    <ul>
-      <li><a href="index.html"><i class="fas fa-home red"></i> Inicio</a></li>
-      <li class="has-submenu">
-        <a href="#"><i class="fas fa-desktop red"></i> Productos</a>
-        <ul class="submenu">
-          <li><a href="notebooks.html"><i class="fas fa-laptop red"></i> Notebooks</a></li>
-          <li><a href="pcs.html"><i class="fas fa-desktop red"></i> PC de Escritorio</a></li>
-          <li class="has-submenu">
-            <a href="#"><i class="fas fa-cogs red"></i> Componentes</a>
-            <ul class="submenu">
-              <li><a href="ram.html"><i class="fas fa-memory red"></i> Memorias RAM</a></li>
-              <li><a href="procesadores.html"><i class="fas fa-microchip red"></i> Procesadores</a></li>
-              <li><a href="video.html"><i class="fas fa-video red"></i> Placas de video</a></li>
-            </ul>
-          </li>
-        </ul>
-      </li>
-      <li><a href="contact.html"><i class="fas fa-envelope red"></i> Contacto</a></li>
-      <li><a href="cart.html"><i class="fas fa-shopping-cart red"></i> Carrito</a></li>
-    </ul>
-  </div>
-  <div class="content">
-  <main>
-    <section class="hero">
-      <h1>Bienvenido a nuestra tienda gamer</h1>
-      <p>Encuentra las mejores computadoras para tus juegos favoritos.
-        Trabajamos con todo tipo de componentes.
-      </p>  
-   </section>
+<html lang="en">
 
-    <section class="products">
-      <div class="bloque">
-        <img src="images/nvidia.jpg" alt="" height="130px" class="imagen">
-        <h4>Gráficos RTX</h4>    
-        <p>
-          Con la tecnología de NVIDIA Ada Lovelace, las GPU NVIDIA GeForce RTX Serie 40 son más que rápidas para jugadores y creadores.
-        </p>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compus Gamer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+
+<body>
+    <header id="header">
+        <div class="logo">
+            <img src="logo.png" alt="Logo de la tienda" width="90px">
+        </div>
+        <h1>Compus Gamer</h1>
+        <a href="index.html"><i class="fas fa-home red"></i> Inicio</a>
+        <a href="notebooks.html"><i class="fas fa-laptop red"></i> Notebooks</a>
+        <a href="pcs.html"><i class="fas fa-desktop red"></i> PC de Escritorio</a>
+        <a href="carrito.html"><i class="fas fa-shopping-cart red"></i> Carrito</a>
+    </header>
+
+    <h2>Los mejores productos</h2>
+    <div class="contenedor" id="contenedor">
+        <div>
+            <img src="images/amd.jpg" alt="amd">
+            <div class="informacion">
+                <p>AMD Ryzen</p>
+                <p class="precio">$199<span>.99</span></p>
+                <button>Comprar</button>
+            </div>
+        </div>
+        <div class="contenedor" id="contenedor">
+            <div>
+                <img src="images/intel.jpg" alt="">
+                <div class="informacion">
+                    <p>Intel Core I9</p>
+                    <p class="precio">$299<span>.99</span></p>
+                    <button>Comprar</button>
+                </div>
+            </div>
+        </div>
+
+      <div class="carrito">
+        <div class="header-carrito">
+            <h2>Tu carrito</h2>
+        </div>
+
+        <div class="carrito-items">
+            <div class="carrito-item">
+                <img src="images/amd.jpg" alt="amd">
+                <div class="carrito-item-detalles">
+                    <span class="carrito-item-titulo">AMD Ryzen</span>
+                    <div class="selector-cantidad">
+                        <i class="fa-solid fa-minus restar-cantidad"></i>
+                        <input type="text" value="1" class="carrito-item-cantidad" disabled>
+                        <i class="fa-solid fa-plus sumar-cantidad"></i>
+                        
+                    </div>
+                    <span class="carrito-item-precio">$199.99</span>
+                </div>
+                <span class="btn-eliminar">
+                    <i class="fa-solid fa-trash"></i>
+                </span>
+            </div>
+
+            <div class="carrito-item">
+                <img src="images/intel.jpg" alt="amd">
+                <div class="carrito-item-detalles">
+                    <span class="carrito-item-titulo">Intel Core i9</span>
+                    <div class="selector-cantidad">
+                        <i class="fa-solid fa-minus restar-cantidad"></i>
+                        <input type="text" value="1" class="carrito-item-cantidad" disabled>
+                        <i class="fa-solid fa-plus sumar-cantidad"></i>
+                        
+                    </div>
+                    <span class="carrito-item-precio">$299.99</span>
+                </div>
+                <span class="btn-eliminar">
+                    <i class="fa-solid fa-trash"></i>
+                </span>
+            </div>
+        </div>
+        <div class="carrito-total">
+            <div class="fila">
+                <strong>Tu total</strong>
+                <span class="carrito-precio-total">
+                    $499.98,00
+                </span>
+            </div>
+            <button class="btn-pagar">Pagar <i class="fa-solid fa-bag-shopping"></i></button>
+        </div>
       </div>
-        <div class="bloque">
-        <img src="images/ryzen.jpg" alt="" height="120px" class="imagen">
-        <h4>Intel & AMD</h4>
-        <p>Velocidades ultrarrápidas y un rendimiento máximo incluso en las tareas más difíciles con el último procesador Intel o AMD.</p>
-      </div>
-    </section>
- 
-  <section class="compus">
-    <img src="images/shopping-cart.png" alt="" height="60px">
-    <h2>
-      Ejemplos de modelo
-    </h2>
-  </section>
-    <div class="padre">
-    <div class="left">
-       <ul>
-        <li><img src="images/intel.jpg" alt="" width="90px">
-        <p>Intel Core Series</p></li>
-        <li><div style="padding-top: 0px;">
-        <strong>Precio</strong></div>
-      <h3>U$D1,590</h3>
+
     </div>
-    <hr style="text-decoration: dashed; color: blue;">
-    <div class="right">
-      <ul>
-        <li><img src="images/amd.jpg" alt="" width="90px">
-        <p>AMD Ryzen Series</p></li>
-        <li><div style="padding-top: 0px;">
-        <strong>Precio</strong></div>
-      <h3>U$D1,560</h3>
-    </div>
-    </div>
-  </main>
- </div>
- <footer class="footer">
-  <div class="footer-content">
-    <div class="footer-logo">
-      <img src="logo.png" alt="Logo de la tienda" width="90px">
-    </div>
-    <div class="footer-icons">
-      <a href="https://www.instagram.com/sebasinfante_00/"><img src="images/icono1.png" alt="" width="20px"></a>
-      <img src="images/icono2.png" alt="" width="20px">
-    </div>
-  </div>
-</footer>
-  <script src="script.js"></script>
 </body>
+
 </html>

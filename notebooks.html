@@ -1,117 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Notebooks</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notebooks</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
+
 <body>
-  <button id="toggleButton" class="boton">≡</button>
-  <div class="sidebar" id="sidebar">
-    <button id="hideButton" class="boton">≡</button>
-    <header>
-      <div class="logo">
+  <header id="header">
+    <div class="logo">
         <img src="logo.png" alt="Logo de la tienda" width="90px">
-      </div>
-    </header>
-    <ul>
-      <li><a href="index.html"><i class="fas fa-home red"></i> Inicio</a></li>
-      <li class="has-submenu">
-        <a href="#"><i class="fas fa-desktop red"></i> Productos</a>
-        <ul class="submenu">
-          <li><a href="notebooks.html"><i class="fas fa-laptop red"></i> Notebooks</a></li>
-          <li><a href="pcs.html"><i class="fas fa-desktop red"></i> PC de Escritorio</a></li>
-          <li class="has-submenu">
-            <a href="#"><i class="fas fa-cogs red"></i> Componentes</a>
-            <ul class="submenu">
-              <li><a href="ram.html"><i class="fas fa-memory red"></i> Memorias RAM</a></li>
-              <li><a href="procesadores.html"><i class="fas fa-microchip red"></i> Procesadores</a></li>
-              <li><a href="video.html"><i class="fas fa-video red"></i> Placas de video</a></li>
-            </ul>
-          </li>
-        </ul>
-      </li>
-      <li><a href="contact.html"><i class="fas fa-envelope red"></i> Contacto</a></li>
-      <li><a href="cart.html"><i class="fas fa-shopping-cart red"></i> Carrito</a></li>
-    </ul>
-  </div>
-  <div class="content">
-    <main>
-        <section class="hero">
-          <h1>Notebooks</h1>
-          <p>Las mejores notebooks para tu espacio de juego o trabajo, están acá
-          </p>  
-       </section>
-
-       <section class="product">
-       <div class="product-info">
-        <h2 style="width: auto;">16" Nova - RTX 4070</h2>
-        <img src="images/notebook1.jpg" height="310px">
     </div>
-    <p class="product-price">PRECIO</p>
-       <p class="product-price">U$D1,999</p> 
-       <button class="add-to-cart-btn" data-product="16 Nova - RTX 4070" data-price="USD1,999">Añadir al Carrito</button>
-       </section>
+    <h1>Compus Gamer</h1>
+    <a href="index.html"><i class="fas fa-home red"></i> Inicio</a>
+    <a href="notebooks.html"><i class="fas fa-laptop red"></i> Notebooks</a>
+    <a href="pcs.html"><i class="fas fa-desktop red"></i> PC de Escritorio</a>
+    <a href="carrito.html"><i class="fas fa-shopping-cart red"></i> Carrito</a>
+</header>
+    
 
-       <section class="product">
-        <div class="product-info">
-         <h2>17" Avon - RTX 4080/4090</h2>
-         <img src="images/notebook2.jpg" height="310px">
-     </div>
-     <p class="product-price">PRECIO</p>
-        <p class="product-price">U$D2,864</p> 
-        <button class="add-to-cart-btn" data-product="Avon - RTX 4080/4090" data-price="USD2,864">Añadir al carrito</button>
-        </section>
-
-        <section class="product">
-            <div class="product-info">
-             <h2>Dell Ryzen 7 16gb Ram 512gb Ssd</h2>
-             <img src="images/notebook3..webp" height="310px">
-         </div>
-         <p class="product-price">PRECIO</p>
-            <p class="product-price">$
-                549.999</p> 
-             <button class="add-to-cart-btn" data-product="Dell Ryzen 7 16gb Ram 512gb Ssd" data-price="USD549,999">Añadir al carrito</button>
-            </section>
-
-        <section class="product">
-         <div class="product-info">
-         <h2>Asus Tuf F15 Core I5 16gb 512gb Ssd Gtx 1650</h2>
-         <img src="images/notebook4.webp" height="310px">
-         </div>
-            <p class="product-price">PRECIO</p>
-            <p class="product-price">$489.999</p> 
-            <button class="add-to-cart-btn" data-product="Asus Tuf F15 Core I5 16gb 512gb Ssd Gtx 1650" data-price="489.999">Añadir al carrito</button>
-        </section>
-
-        <section class="product">
-            <div class="product-info">
-             <h2>Lenovo IdeaPad 3i Intel I5 1135g7 Ram 8gb Ssd 256gb Full hd Windows 11</h2>
-             <img src="images/notebook5.webp" height="310px">
-         </div>
-         <p class="product-price">PRECIO</p>
-            <p class="product-price">$298.290</p> 
-            <button class="add-to-cart-btn" data-product="Lenovo IdeaPad 3i Intel I5 1135g7 Ram 8gb Ssd 256gb Full hd Windows 11" data-price="298.290">Añadir al carrito</button>
-            </section>
-
-    </main>
-
-  </div>
-
-  <footer class="footer">
-    <div class="footer-content">
-      <div class="footer-logo">
-        <img src="logo.png" alt="Logo de la tienda" width="90px">
-      </div>
-      <div class="footer-icons">
-        <a href="https://www.instagram.com/sebasinfante_00/"><img src="images/icono1.png" alt="" width="20px"></a>
-        <img src="images/icono2.png" alt="" width="20px">
-      </div>
+  <div id="contenedor" class="contenedor">
+    <div>
+        <img src="images/notebook1.jpg" alt="producto 1">
+        <div class="informacion">
+            <p>Producto 1</p>
+            <p class="precio">$199<span>.99</span></p>
+            <button>Comprar</button>
+        </div>
     </div>
-  </footer>
-<script src="script.js"></script>
+    <div>
+        <img src="images/notebook2.jpg" alt="producto 2">
+        <div class="informacion">
+            <p>Producto 2</p>                   
+            <p class="precio">$299<span>.99</span></p>
+            <button>Comprar</button>
+        </div>
+    </div>
+    <div>
+        <img src="images/notebook3..webp" alt="producto 3">
+        <div class="informacion">
+            <p>Producto 3</p>                   
+            <p class="precio">$399<span>.99</span></p>
+            <button>Comprar</button>
+        </div>
+    </div>
+    <div>
+        <img src="images/notebook4.webp" alt="producto 4">
+        <div class="informacion">
+            <p>Producto 4</p>                   
+            <p class="precio">$499<span>.99</span></p>
+            <button>Comprar</button>
+        </div>
+    </div>
+    <div>
+        <img src="images/notebook5.webp" alt="producto 5">
+        <div class="informacion">
+            <p>Producto 5</p>                   
+            <p class="precio">$599<span>.99</span></p>
+            <button>Comprar</button>
+        </div>
+    </div>
+        <div class="carrito">
+            <div class="header-carrito">
+                <h2>Tu carrito</h2>
+            </div>
+    
+            <div class="carrito-items">
+                <div class="carrito-item">
+                    <img src="images/amd.jpg" alt="amd">
+                    <div class="carrito-item-detalles">
+                        <span class="carrito-item-titulo">AMD Ryzen</span>
+                        <div class="selector-cantidad">
+                            <i class="fa-solid fa-minus restar-cantidad"></i>
+                            <input type="text" value="1" class="carrito-item-cantidad" disabled>
+                            <i class="fa-solid fa-plus sumar-cantidad"></i>
+                            
+                        </div>
+                        <span class="carrito-item-precio">$199.99</span>
+                    </div>
+                    <span class="btn-eliminar">
+                        <i class="fa-solid fa-trash"></i>
+                    </span>
+                </div>
+    
+                <div class="carrito-item">
+                    <img src="images/intel.jpg" alt="amd">
+                    <div class="carrito-item-detalles">
+                        <span class="carrito-item-titulo">Intel Core i9</span>
+                        <div class="selector-cantidad">
+                            <i class="fa-solid fa-minus restar-cantidad"></i>
+                            <input type="text" value="1" class="carrito-item-cantidad" disabled>
+                            <i class="fa-solid fa-plus sumar-cantidad"></i>
+                            
+                        </div>
+                        <span class="carrito-item-precio">$299.99</span>
+                    </div>
+                    <span class="btn-eliminar">
+                        <i class="fa-solid fa-trash"></i>
+                    </span>
+                </div>
+            </div>
+            <div class="carrito-total">
+                <div class="fila">
+                    <strong>Tu total</strong>
+                    <span class="carrito-precio-total">
+                        $499.98,00
+                    </span>
+                </div>
+                <button class="btn-pagar">Pagar <i class="fa-solid fa-bag-shopping"></i></button>
+            </div>
+          </div>
+  <script src="script.js"></script>
 </body>
+
 </html>

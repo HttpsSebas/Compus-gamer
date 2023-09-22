@@ -5,99 +5,105 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PC de Escritorio</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-  <button id="toggleButton" class="boton">≡ Abrir Menú</button>
-  <div class="sidebar" id="sidebar">
-    <button id="hideButton" class="boton">≡ Cerrar Menú</button>
-    <header>
-      <div class="logo">
+  <header id="header">
+    <div class="logo">
         <img src="logo.png" alt="Logo de la tienda" width="90px">
-      </div>
-    </header>
-    <ul>
-      <li><a href="index.html"><i class="fas fa-home red"></i> Inicio</a></li>
-      <li class="has-submenu">
-        <a href="#"><i class="fas fa-desktop red"></i> Productos</a>
-        <ul class="submenu">
-          <li><a href="notebooks.html"><i class="fas fa-laptop red"></i> Notebooks</a></li>
-          <li><a href="pcs.html"><i class="fas fa-desktop red"></i> PC de Escritorio</a></li>
-          <li class="has-submenu">
-            <a href="#"><i class="fas fa-cogs red"></i> Componentes</a>
-            <ul class="submenu">
-              <li><a href="ram.html"><i class="fas fa-memory red"></i> Memorias RAM</a></li>
-              <li><a href="procesadores.html"><i class="fas fa-microchip red"></i> Procesadores</a></li>
-              <li><a href="video.html"><i class="fas fa-video red"></i> Placas de video</a></li>
-            </ul>
-          </li>
-        </ul>
-      </li>
-      <li><a href="contact.html"><i class="fas fa-envelope red"></i> Contacto</a></li>
-      <li><a href="cart.html"><i class="fas fa-shopping-cart red"></i> Carrito</a></li>
-    </ul>
-  </div>
-  <div class="content">
-    <main>
-      <section class="hero">
-        <h1>PCs de Escritorio</h1>
-        <p>Jugá a máxima velocidad o trabajá sin crasheos o interrupciones.</p>
-      </section>
-
-      <section class="product">
-        <div class="product-info">
-          <h2>Intel C I3 + 8 Gb Ssd 240 W10 Office</h2>
-          <img src="images/pc1.webp" alt="PC 1" height="310px">
-          <p class="product-price">PRECIO</p>
-          <p class="product-price">$119.999</p> 
-          <button class="add-to-cart-btn" data-product="Intel C I3 + 8 Gb Ssd 240 W10 Office" data-price="119.999">Añadir al Carrito</button>
-        </div>
-      </section>
-
-      <section class="product">
-        <div class="product-info">
-          <h2>Intel Core I5 8gb Ssd240 W10 Office</h2>
-          <img src="images/pc2.webp" alt="PC 2" height="310px">
-          <p class="product-price">PRECIO</p>
-          <p class="product-price">$141.500</p> 
-          <button class="add-to-cart-btn" data-product="Intel Core I5 8gb Ssd240 W10 Office" data-price="141.500">Añadir al carrito</button>
-        </div>
-      </section>
-
-      <section class="product">
-        <div class="product-info">
-          <h2>Cpu Core I3 8 Gb Ram 240gb Hdmi</h2>
-          <img src="images/pc3.webp" alt="PC 3" height="310px">
-          <p class="product-price">PRECIO</p>
-          <p class="product-price">$129.990</p> 
-          <button class="add-to-cart-btn" data-product="Cpu Core I3 8 Gb Ram 240gb Hdmi" data-price="129.990">Añadir al carrito</button>
-        </div>
-      </section>
-
-      <section class="product">
-        <div class="product-info">
-          <h2>Cpu Intel Core I3 16 Gb Ram 1 Tb</h2>
-          <img src="images/pc4.webp" alt="PC 4" height="310px">
-          <p class="product-price">PRECIO</p>
-          <p class="product-price">$97.990</p> 
-          <button class="add-to-cart-btn" data-product="Cpu Core I3 16 Gb Ram 1Tb" data-price="97.990">Añadir al carrito</button>
-        </div>
-      </section>
-
-    </main>
-  </div>
-  <footer class="footer">
-    <div class="footer-content">
-      <div class="footer-logo">
-        <img src="logo.png" alt="Logo de la tienda" width="90px">
-      </div>
-      <div class="footer-icons">
-        <a href="https://www.instagram.com/sebasinfante_00/"><img src="images/icono1.png" alt="" width="20px"></a>
-        <img src="images/icono2.png" alt="" width="20px">
-      </div>
     </div>
-  </footer>
+    <h1>Compus Gamer</h1>
+    <a href="index.html"><i class="fas fa-home red"></i> Inicio</a>
+    <a href="notebooks.html"><i class="fas fa-laptop red"></i> Notebooks</a>
+    <a href="pcs.html"><i class="fas fa-desktop red"></i> PC de Escritorio</a>
+    <a href="carrito.html"><i class="fas fa-shopping-cart red"></i> Carrito</a>
+</header>
+  
+  <div id="contenedor" class="contenedor">
+    <div>
+        <img src="images/pc1.webp" alt="producto 1">
+        <div class="informacion">
+            <p>Intel C I3 + 8 Gb Ssd 240 W10 Office</p>
+            <p class="precio">$119<span>.99</span></p>
+            <button>Comprar</button>
+        </div>
+    </div>
+    <div>
+        <img src="images/pc2.webp" alt="producto 2">
+        <div class="informacion">
+            <p>Intel Core I5 8gb Ssd240 W10 Office</p>                   
+            <p class="precio">$141<span>.500</span></p>
+            <button>Comprar</button>
+        </div>
+    </div>
+    <div>
+        <img src="images/pc3.webp" alt="producto 3">
+        <div class="informacion">
+            <p>Cpu Core I3 8 Gb Ram 240gb Hdmi</p>                   
+            <p class="precio">$129<span>.990</span></p>
+            <button>Comprar</button>
+        </div>
+    </div>
+    <div>
+        <img src="images/pc4.webp" alt="producto 4">
+        <div class="informacion">
+            <p>Cpu Intel Core I3 16 Gb Ram 1 Tb</p>                   
+            <p class="precio">$97<span>.990</span></p>
+            <button>Comprar</button>
+        </div>
+    </div>
+</div>
+    <div class="carrito">
+        <div class="header-carrito">
+            <h2>Tu carrito</h2>
+        </div>
+
+        <div class="carrito-items">
+            <div class="carrito-item">
+                <img src="images/amd.jpg" alt="amd">
+                <div class="carrito-item-detalles">
+                    <span class="carrito-item-titulo">AMD Ryzen</span>
+                    <div class="selector-cantidad">
+                        <i class="fa-solid fa-minus restar-cantidad"></i>
+                        <input type="text" value="1" class="carrito-item-cantidad" disabled>
+                        <i class="fa-solid fa-plus sumar-cantidad"></i>
+                        
+                    </div>
+                    <span class="carrito-item-precio">$199.99</span>
+                </div>
+                <span class="btn-eliminar">
+                    <i class="fa-solid fa-trash"></i>
+                </span>
+            </div>
+
+            <div class="carrito-item">
+                <img src="images/intel.jpg" alt="amd">
+                <div class="carrito-item-detalles">
+                    <span class="carrito-item-titulo">Intel Core i9</span>
+                    <div class="selector-cantidad">
+                        <i class="fa-solid fa-minus restar-cantidad"></i>
+                        <input type="text" value="1" class="carrito-item-cantidad" disabled>
+                        <i class="fa-solid fa-plus sumar-cantidad"></i>
+                        
+                    </div>
+                    <span class="carrito-item-precio">$299.99</span>
+                </div>
+                <span class="btn-eliminar">
+                    <i class="fa-solid fa-trash"></i>
+                </span>
+            </div>
+        </div>
+        <div class="carrito-total">
+            <div class="fila">
+                <strong>Tu total</strong>
+                <span class="carrito-precio-total">
+                    $499.98,00
+                </span>
+            </div>
+            <button class="btn-pagar">Pagar <i class="fa-solid fa-bag-shopping"></i></button>
+        </div>
+      </div>    
+
 <script src="script.js"></script>
 </body>
 </html>
